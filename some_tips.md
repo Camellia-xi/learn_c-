@@ -7,3 +7,6 @@
         //...代码
      }
 ```
+
+2. nums.size() 返回的是 unsigned int/long
+3.dfs问题，需要标记的时候，可以考虑加个int & flag
