@@ -45,3 +45,7 @@
   - **`vector`**: 一般使用迭代器，删除单个元素或区间。
 
   - **`unordered_map`**: 按 key 删除（最常见），也可以使用迭代器。
+3.**map**：是一个有序关联容器，存储唯一key -> value（mapped value） 的键值对，元素按 key 根据比较器（默认 std::less<Key>，即升序）**自动保持排序**。
+  - `insert`
+  - `erase`
+  - `find`
