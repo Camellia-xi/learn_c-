@@ -16,7 +16,7 @@
 1. **`set`**: set是一个去重集合。
   - 可用 `set m.` 来使用 `find()`，查找后返回迭代器，若未找到返回 `m.end()`
   - 可用 `set m.` 来使用 `lower_bound`:
-    - 基本用法：`iterator lower_bound(const Key& key) const`，返回集合中第一个 >= key 的元素迭代器；`lower_bound` 是 STL 中非常常用的函数，尤其适合有序容器（如 `std::set`, `std::map`, `std::vector`）
+    - 基本用法：`iterator lower_bound(const Key& key) const`，返回集合中第一个 >= key 的元素迭代器；`lower_bound` 是 STL 中非常常用的函数，尤其适合有序容器（如 `std::set`, `std::map`）
 
 2. **`erase`**: `erase()` 是 C++ STL 中一个非常常用的方法，用于从容器中删除元素。不同容器用法略有不同，如 `string`、`vector`、`unordered_map`。**7/11**
 
@@ -45,7 +45,10 @@
   - **`vector`**: 一般使用迭代器，删除单个元素或区间。
 
   - **`unordered_map`**: 按 key 删除（最常见），也可以使用迭代器。
-3.**map**：是一个有序关联容器，存储唯一key -> value（mapped value） 的键值对，元素按 key 根据比较器（默认 std::less<Key>，即升序）**自动保持排序**。
+
+3. **map**：是一个有序关联容器，存储唯一key -> value（mapped value） 的键值对，元素按 key 根据比较器（默认 std::less<Key>，即升序）**自动保持排序**。
   - `insert`
   - `erase`
   - `find`
+
+4. **ranges::lower_bound**:(h,value);
